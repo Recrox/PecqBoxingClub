@@ -14,8 +14,6 @@ namespace RamDam.BackEnd.Core.Repositories
         Task<List<UserRating>> GetUserSubRatings(Guid idUser);
         Task<bool> DeleteUser(Guid id);
         Task<bool> InsertAdminRating(List<GenericAdminRating> subRating);
-        Task<bool> InsertUserRating(GenericUserRating subRating);
-        Task<List<MovieAdmin>> GetMoviesAdmin(Guid? id, bool filter);
         Task<List<UserAnswer>> GetUserAnswers();
     }
 }

@@ -1,5 +1,4 @@
-﻿using Configuration;
-using Microsoft.OpenApi.Models;
+﻿using Microsoft.OpenApi.Models;
 
 namespace PecqBoxingClub.Controllers;
 
@@ -18,7 +17,7 @@ public class Startup
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
-        services.AddGlobalSettingsServices(Configuration);
+        //services.AddGlobalSettingsServices(Configuration);
 
         //services.AddSwaggerGen(c =>
         //{
@@ -26,7 +25,7 @@ public class Startup
         //});
     }
 
-    public void Configure(IApplicationBuilder app, GlobalSettings globalSettings)
+    public void Configure(IApplicationBuilder app)
     {
         app.UseSwagger();
         app.UseSwaggerUI();
