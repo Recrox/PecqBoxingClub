@@ -17,6 +17,18 @@ public class Startup
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAnyOriginPolicy",
+                builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+        });
+
         //services.AddGlobalSettingsServices(Configuration);
 
         //services.AddSwaggerGen(c =>
@@ -38,6 +50,7 @@ public class Startup
 
         app.UseHttpsRedirection();
         app.UseAuthorization();
+        app.UseCors("AllowAnyOriginPolicy");
 
         app.UseRouting();
         app.UseEndpoints(endpoints =>
