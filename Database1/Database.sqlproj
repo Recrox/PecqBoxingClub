@@ -6,13 +6,13 @@
     <Name>Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{70e7f32f-cef0-47fc-b6ad-47b329ef49bc}</ProjectGuid>
+    <ProjectGuid>{4901a2e2-ad07-4264-9ecd-e17d0ae65c3f}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>Database</RootNamespace>
-    <AssemblyName>Database</AssemblyName>
+    <RootNamespace>Database1</RootNamespace>
+    <AssemblyName>Database1</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -58,7 +58,9 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Member.sql" />
     <None Include="License.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Member.sql" />
   </ItemGroup>
 </Project>

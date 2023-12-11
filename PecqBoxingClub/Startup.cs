@@ -22,6 +22,7 @@ public class Startup
     {
         services.AddDbContext<BoxingClubContext>();
         AddDependencyInjection(services);
+
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
