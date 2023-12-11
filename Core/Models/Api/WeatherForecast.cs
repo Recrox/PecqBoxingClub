@@ -1,3 +1,4 @@
+namespace PecqBoxingClub;
 
 public class WeatherForecast
 {

@@ -1,5 +1,5 @@
 ﻿
-namespace RamDam.BackEnd.Core.Enums
+namespace PecqBoxingClubApi.BackEnd.Core.Enums
 {
     public class Network
     {

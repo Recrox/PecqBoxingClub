@@ -1,7 +1,7 @@
-﻿using RamDam.BackEnd.Core.Models.Table;
+﻿using PecqBoxingClubApi.BackEnd.Core.Models.Table;
 using System.Collections.Generic;
 
-namespace RamDam.BackEnd.Core.Utilities
+namespace PecqBoxingClubApi.BackEnd.Core.Utilities
 {
     public class CustomClaimTypes
     {

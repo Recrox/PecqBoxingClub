@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RamDam.BackEnd.Core.Models.Pagination
+namespace PecqBoxingClubApi.BackEnd.Core.Models.Pagination
 {
     public class Pagination
     {

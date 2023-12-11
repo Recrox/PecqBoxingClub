@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace RamDam.BackEnd.Core.ActionFilters
+namespace PecqBoxingClubApi.BackEnd.Core.ActionFilters
 {
     public class ModelStateFilter : IActionFilter
     {

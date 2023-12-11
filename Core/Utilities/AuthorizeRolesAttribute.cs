@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using RamDam.BackEnd.Core.Enums;
+using PecqBoxingClubApi.BackEnd.Core.Enums;
 using System.Collections.Generic;
 
-namespace RamDam.BackEnd.Core.Utilities
+namespace PecqBoxingClubApi.BackEnd.Core.Utilities
 {
     public class AuthorizeRolesAttribute : AuthorizeAttribute
     {

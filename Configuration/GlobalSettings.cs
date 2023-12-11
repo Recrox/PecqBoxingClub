@@ -1,4 +1,4 @@
-﻿namespace RamDam.BackEnd.Configuration;
+﻿namespace PecqBoxingClubApi.BackEnd.Configuration;
 
 public class GlobalSettings
 {

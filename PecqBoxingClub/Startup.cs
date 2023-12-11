@@ -29,6 +29,19 @@ public class Startup
                 });
         });
 
+        services.AddHttpsRedirection(options =>
+        {
+            options.HttpsPort = 443; // Le port HTTPS
+        });
+
+        // Gérer les certificats?
+        //services.AddHttpsRedirection(options =>
+        //{
+        //    options.HttpsPort = 443;
+        //    options.SslPort = 443; // Port SSL
+        //    options.UseHttps("chemin_vers_certificat.pfx", "mot_de_passe_certificat");
+        //});
+
         //services.AddGlobalSettingsServices(Configuration);
 
         //services.AddSwaggerGen(c =>
@@ -57,5 +70,7 @@ public class Startup
         {
             endpoints.MapControllers();
         });
+
+        app.UseHttpsRedirection(); // Redirige toutes les requêtes HTTP vers HTTPS
     }
 }

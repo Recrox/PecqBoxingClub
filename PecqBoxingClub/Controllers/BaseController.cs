@@ -1,25 +1,25 @@
-﻿using RamDam.BackEnd.Configuration;
-using RamDam.BackEnd.Core;
-using RamDam.BackEnd.Core.Models.Table;
+﻿using PecqBoxingClubApi.BackEnd.Configuration;
+using PecqBoxingClubApi.BackEnd.Core;
+using PecqBoxingClubApi.BackEnd.Core.Models.Table;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RamDam.BackEnd.Api.Controllers
+namespace PecqBoxingClubApi.BackEnd.Api.Controllers
 {
     public class BaseController : Controller
     {
-        protected readonly CurrentContext _currentContext;
+        //protected readonly CurrentContext _currentContext;
         protected readonly GlobalSettings _globalSettings;
 
-        protected User _user => _currentContext?.User;
-        protected string _deviceIdentifier => _currentContext?.DeviceIdentifier;
+        //protected User _user => _currentContext?.User;
+        //protected string _deviceIdentifier => _currentContext?.DeviceIdentifier;
 
         public BaseController(
-            GlobalSettings globalSettings,
-            CurrentContext currentContext
+            GlobalSettings globalSettings
+            //CurrentContext currentContext
             )
         {
             _globalSettings = globalSettings;
-            _currentContext = currentContext;
+            //_currentContext = currentContext;
         }
 
         protected FileContentResult GetFileContentResult(string filename, string contentType, ref byte[] fileContent)

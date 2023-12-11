@@ -1,4 +1,4 @@
-﻿namespace RamDam.BackEnd.Core.Models.Mail
+﻿namespace PecqBoxingClubApi.BackEnd.Core.Models.Mail
 {
     public class BaseMailModel
     {

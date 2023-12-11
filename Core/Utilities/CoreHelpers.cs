@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using Newtonsoft.Json;
-using RamDam.BackEnd.Core.Models.Api;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -13,7 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace RamDam.BackEnd.Core.Utilities
+namespace PecqBoxingClubApi.BackEnd.Core.Utilities
 {
     public static class CoreHelpers
     {

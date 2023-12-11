@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RamDam.BackEnd.Core.Models.SP
+namespace PecqBoxingClubApi.BackEnd.Core.Models.SP
 {
     public class SPIdUser: SPBase
     {

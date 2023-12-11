@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RamDam.BackEnd.Core.Models.Enums
+namespace PecqBoxingClubApi.BackEnd.Core.Models.Enums
 {
     public static class RoleCode
     {
