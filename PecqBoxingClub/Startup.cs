@@ -1,4 +1,10 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Core.Repositories;
+using Core.Repositories.Implementations;
+using Core.Services;
+using Core.Services.Implementations;
+using Database;
+using Microsoft.OpenApi.Models;
+using System;
 
 namespace PecqBoxingClub.Controllers;
 
@@ -14,9 +20,13 @@ public class Startup
     public IWebHostEnvironment Environment { get; set; }
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddDbContext<BoxingClubContext>();
+        AddDependencyInjection(services);
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+        services.AddAutoMapper(typeof(Startup));
+        
 
         services.AddCors(options =>
         {
@@ -48,6 +58,12 @@ public class Startup
         //{
         //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "VotreAPI", Version = "v1" });
         //});
+    }
+
+    private static void AddDependencyInjection(IServiceCollection services)
+    {
+        services.AddScoped<IMemberService, MemberService>();
+        services.AddScoped<IMemberRepository, MemberRepository>();
     }
 
     public void Configure(IApplicationBuilder app)

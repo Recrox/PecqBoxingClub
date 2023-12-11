@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace PecqBoxingClub.Controllers;
 
 [ApiController]
-[Route("[controller]/members")]
+[Route("api/[controller]")]
 public class MemberController : ControllerBase
 {
     private readonly IMemberService memberService;
