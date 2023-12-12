@@ -1,7 +1,6 @@
 ﻿
 using AutoMapper;
 using Core.Repositories.Factory;
-using Database;
 using Microsoft.EntityFrameworkCore;
 using PecqBoxingClubApi.BackEnd.Core.Models.Table;
 

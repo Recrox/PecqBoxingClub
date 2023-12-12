@@ -1,8 +1,10 @@
-﻿namespace Core.Models.Api;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class License
+namespace Core.Models.Api;
+
+
+public class License : BaseEntity
 {
-    public int Id { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
 }

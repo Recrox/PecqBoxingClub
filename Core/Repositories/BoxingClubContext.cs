@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using PecqBoxingClubApi.BackEnd.Core.Models.Table;
 
-namespace Database
+namespace Core.Repositories
 {
     public class BoxingClubContext : DbContext
     {

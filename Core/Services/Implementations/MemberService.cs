@@ -25,10 +25,11 @@ public class MemberService : IMemberService
     //    return _memberRepository.GetAsync(id);
     //}
 
-    //public Member AddMember(Member member)
-    //{
-    //    return _memberRepository.AddAsync(member);
-    //}
+    public async Task AddMember(Member member)
+    {
+        var memberToAdd = this.mapper.Map<Member, PecqBoxingClubApi.BackEnd.Core.Models.Table.Member>(member);
+        await _memberRepository.AddAsync(memberToAdd);
+    }
 
     //public void UpdateMember(Member member)
     //{

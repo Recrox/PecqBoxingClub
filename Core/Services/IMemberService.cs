@@ -5,7 +5,7 @@ public interface IMemberService
 {
     Task<IEnumerable<Member>> GetMembersAsync();
     //Member GetMemberById(int id);
-    //Member AddMember(Member member);
+    Task AddMember(Member member);
     //void UpdateMember(Member member);
     //void DeleteMember(int id);
 }

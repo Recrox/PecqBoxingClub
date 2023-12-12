@@ -32,16 +32,16 @@ public class MemberController : ControllerBase
     //    return member;
     //}
 
-    //[HttpPost]
-    //public ActionResult<Member> AddMember(Member member)
-    //{
-    //    this.memberService.AddMember(member);
-    //    if (member == null)
-    //    {
-    //        return BadRequest();
-    //    }
-    //    return CreatedAtAction(nameof(GetMemberById), new { id = member.Id }, member);
-    //}
+    [HttpPost]
+    public async Task<ActionResult<Member>> AddMemberAsync(Member member)
+    {
+        await this.memberService.AddMember(member);
+        if (member == null)
+        {
+            return BadRequest();
+        }
+        return Ok();
+    }
 
     //[HttpPut("{id}")]
     //public IActionResult UpdateMember(int id, Member member)
